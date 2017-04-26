@@ -1,0 +1,26 @@
+body
+  margin: 0
+  padding: 0
+  background: #ACE6FF
+
+.window
+  height: 175px
+  width: 100%
+  margin: 0
+  position: relative
+  overflow: hidden
+  transform: translate3d(0, 0, 0)
+
+.clouds
+  background: url("img/bg-clouds.png")
+  position: absolute
+  left: 0
+  top: 0
+  height: 100%
+  width: 400%
+  animation: slide 10s linear infinite
+  transform: translate3d(0, 0, 0)
+
+@keyframes slide
+  100%
+    -webkit-transform: translateX(-72%)

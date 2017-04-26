@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo')
+
+.jumbo
+  display: flex
+  align-items: center
+  justify-content: center
+
+.logo
+  margin-top: 30px
+  width: 62px
+  height: 56px
+  background: url("img/react.svg")
+  position: relative
+  z-index: 1
+  animation: spin 10s linear infinite
+
+@keyframes spin
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+
+h1
+  color: #50fa7b
+  position: absolute
+  z-index: 1
+  text-shadow: -1px 1px 2px #44475a
+  font-family: Baloo
+  font-size: 60px
+  top: 30px
+
+p
+  color: white
+  position: absolute
+  z-index: 1
+  top: 120px
+  text-shadow: -1px 1px 2px #44475a
+  font-family: Baloo
+
+span
+  color: #f1fa8c
+  font-weight: bolder
