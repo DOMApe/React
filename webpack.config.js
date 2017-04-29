@@ -7,7 +7,7 @@ let isProd = process.env.NODE_ENV === 'production';
 let cssDev = ['style-loader', 'css-loader', 'sass-loader'];
 let cssProd = ExtractTextWebpackPlugin.extract({
 		fallback: 'style-loader',
-		use: ['css-loader', 'sass-loader'],
+		use: ['css-loader', 'postcss-loader', 'sass-loader'],
 		publicPath: '/dist'
 });
 let cssConfig = isProd ? cssProd : cssDev;
